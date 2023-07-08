@@ -5,15 +5,14 @@ import invitation from "./assets/svgs/invitacion.png";
 import regalos from "./assets/svgs/regalos.svg";
 import spotify from "./assets/svgs/spotify.svg";
 import ubicacion from "./assets/svgs/ubicacion.svg";
-
 //Photos
-import photo1 from "./assets/photos/1.JPG";
+import photo1 from "./assets/photos/1.jpg";
 import photo2 from "./assets/photos/2.jpg";
 import photo3 from "./assets/photos/3.jpg";
-import photo4 from "./assets/photos/4.JPG";
+import photo4 from "./assets/photos/4.jpg";
 import photo5 from "./assets/photos/5.jpg";
-import photo6 from "./assets/photos/6.JPG";
-import photo7 from "./assets/photos/7.JPG";
+import photo6 from "./assets/photos/6.jpg";
+import photo7 from "./assets/photos/7.jpg";
 import photo8 from "./assets/photos/8.jpg";
 
 import { ElfsightWidget } from "react-elfsight-widget";
@@ -208,7 +207,7 @@ const App = () => {
           }}
           height="550"
           loading="lazy"
-          allowfullscreen
+          allowFullscreen
           referrerpolicy="no-referrer-when-downgrade"
           title="mapa"
           src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDwASquGLlakbT_jhAezIJb1ZeDTu9hCtM&q=Ko+Eventos+-+Camino+Al+Volcán,+El+Manzano,+San+Jose+de+Maipo,+Chile&maptype=satellite&zoom=13"
@@ -273,7 +272,7 @@ const App = () => {
           height="200"
           frameBorder="0"
           title="spotify"
-          allowfullscreen=""
+          allowFullscreen=""
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
         ></iframe>
