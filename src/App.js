@@ -6,14 +6,14 @@ import regalos from "./assets/svgs/regalos.svg";
 import spotify from "./assets/svgs/spotify.svg";
 import ubicacion from "./assets/svgs/ubicacion.svg";
 //Photos
-import photo1 from "./assets/photos/1.jpg";
-import photo2 from "./assets/photos/2.jpg";
-import photo3 from "./assets/photos/3.jpg";
-import photo4 from "./assets/photos/4.jpg";
-import photo5 from "./assets/photos/5.jpg";
-import photo6 from "./assets/photos/6.jpg";
-import photo7 from "./assets/photos/7.jpg";
-import photo8 from "./assets/photos/8.jpg";
+import photo1 from "./assets/fotos/1.jpg";
+import photo2 from "./assets/fotos/2.jpg";
+import photo3 from "./assets/fotos/3.jpg";
+import photo4 from "./assets/fotos/4.jpg";
+import photo5 from "./assets/fotos/5.jpg";
+import photo6 from "./assets/fotos/6.jpg";
+import photo7 from "./assets/fotos/7.jpg";
+import photo8 from "./assets/fotos/8.jpg";
 
 import { ElfsightWidget } from "react-elfsight-widget";
 
