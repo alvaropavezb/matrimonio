@@ -168,7 +168,7 @@ const App = () => {
           }}
         >
           <Title
-            title="Ubicacion"
+            title="Ubicación"
             description={
               "Camino al volcán #11815, San José de Maipo, Santiago."
             }
@@ -223,10 +223,10 @@ const App = () => {
             description={
               "Agrega a nuestra playlist de Spotify tus mejores recomendaciones"
             }
-            buttonText={"Unete a la playlist"}
+            buttonText={"Únete aquí"}
             onPress={() => {
               window.open(
-                "https://open.spotify.com/playlist/3g90UpMfBU2AnmuzzOZwFp?si=BkdmXw5RQiOij8L1X_X1IA&pt=c0d10d45647b03f994980edc7ab90ecb"
+                "https://open.spotify.com/playlist/3g90UpMfBU2AnmuzzOZwFp?si=FKyR0O-qSHG-PDvV8VkyQw&pt=ecc364426d3f96e23018ada9b7bc4694"
               );
             }}
             footerMusic={"Se parte de nuestra playlist"}
