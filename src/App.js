@@ -2,9 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import countdown from "./assets/svgs/countdown.svg";
 import invitation from "./assets/svgs/invitacion.png";
-import regalos from "./assets/svgs/regalos.svg";
-import spotify from "./assets/svgs/spotify.svg";
-import ubicacion from "./assets/svgs/ubicacion.svg";
+
 //Photos
 import photo1 from "./assets/fotos/1.jpg";
 import photo2 from "./assets/fotos/2.jpg";
@@ -14,6 +12,8 @@ import photo5 from "./assets/fotos/5.jpg";
 import photo6 from "./assets/fotos/6.jpg";
 import photo7 from "./assets/fotos/7.jpg";
 import photo8 from "./assets/fotos/8.jpg";
+
+import Title from "./components/Title";
 
 import { ElfsightWidget } from "react-elfsight-widget";
 
@@ -62,19 +62,6 @@ const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        {/*   <div>
-          <img src={topleft} className="App-logo" alt="logo" />
-          <img src={toprigth} className="App-logo-right" alt="logo" />
-        </div>
-
-        <div>
-          <img src={nombres} className="Nombres" alt="logo" />
-        </div>
-        <img src={estamos} className="Estamos" alt="logo" />
-        <img src={footer} className="Footer" alt="logo" />
-        <img src={footerleft} className="FooterLeft" alt="logo" />
-        <img src={footerr} className="FooterRight" alt="logo" />
- */}
         <img src={invitation} className="App-logo" alt="logo" />
         <div
           style={{
@@ -176,106 +163,75 @@ const App = () => {
         </div>
         <div
           style={{
-            alignContent: "center",
-            alignItems: "center",
-            paddingTop: "5vmin",
-            paddingBottom: "5vmin",
-            display: "flex",
             backgroundColor: "white",
+            flexDirection: "column",
           }}
         >
-          <img
-            style={{
-              alignSelf: "center",
-              marginBottom: "5vmin",
-              width: "90%",
-              margin: "0 auto",
-              marginTop: "-5vmin",
-            }}
-            src={ubicacion}
-            className="App-logo"
-            alt="logo"
+          <Title
+            title="Ubicacion"
+            description={
+              "Camino al volcán #11815, San José de Maipo, Santiago."
+            }
+            footerUbicacion={"K0 Eventos"}
           />
+          <iframe
+            frameBorder={0}
+            style={{ width: "100%" }}
+            height="550"
+            loading="lazy"
+            allowFullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            title="mapa"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDwASquGLlakbT_jhAezIJb1ZeDTu9hCtM&q=Ko+Eventos+-+Camino+Al+Volcán,+El+Manzano,+San+Jose+de+Maipo,+Chile&maptype=satellite&zoom=13"
+          ></iframe>
         </div>
-        <iframe
-          frameBorder={0}
-          style={{
-            marginRight: "2vmin",
-            marginLeft: "2vmin",
-            border: "2px solid white",
-            marginTop: "-20vmin",
-          }}
-          height="550"
-          loading="lazy"
-          allowFullscreen
-          referrerpolicy="no-referrer-when-downgrade"
-          title="mapa"
-          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDwASquGLlakbT_jhAezIJb1ZeDTu9hCtM&q=Ko+Eventos+-+Camino+Al+Volcán,+El+Manzano,+San+Jose+de+Maipo,+Chile&maptype=satellite&zoom=13"
-        ></iframe>
         <div
-          onClick={() => {
-            window.open(
-              "https://milistadenovios.cl/lista/jesuyalvaro",
-              "_blank"
-            );
-          }}
           style={{
-            alignContent: "center",
-            alignItems: "center",
             backgroundColor: "white",
-            display: "flex",
-            cursor: "pointer",
-
-            paddingBottom: "20px",
+            flexDirection: "column",
           }}
         >
-          <img
-            style={{
-              alignSelf: "center",
-              width: "100%",
-              margin: "0 auto",
+          <Title
+            title="Regalos"
+            description={
+              "El mejor regalo es que compartan con nosotros en este día tan especial. Si desean contribuir de alguna otra manera, aquí una idea. "
+            }
+            footer={"Aporte para Luna de Miel"}
+            buttonText={"Haz click aquí para los detalles"}
+            onPress={() => {
+              window.open(
+                "https://milistadenovios.cl/lista/jesuyalvaro",
+                "_blank"
+              );
             }}
-            src={regalos}
-            className="App-logo"
-            alt="logo"
           />
         </div>
+
         <ElfsightWidget
           style={{ backgroundColor: "white", paddingBottom: 20 }}
           widgetId="e2b22dfa-3014-4286-b1c7-6bddb5d4823f"
         />
-        <img
-          style={{
-            alignSelf: "center",
-            width: "100%",
-            margin: "0 auto",
-          }}
-          src={spotify}
-          className="App-logo"
-          alt="logo"
-          onClick={() => {
-            window.open(
-              "https://open.spotify.com/playlist/3g90UpMfBU2AnmuzzOZwFp?si=BkdmXw5RQiOij8L1X_X1IA&pt=c0d10d45647b03f994980edc7ab90ecb"
-            );
-          }}
-        />
-        <iframe
-          style={{
-            paddingLeft: "2vmin",
-            paddingRight: "2vmin",
-            marginTop: "-15vmin",
 
+        <div
+          style={{
             backgroundColor: "white",
+            flexDirection: "column",
           }}
-          src="https://open.spotify.com/embed/playlist/3g90UpMfBU2AnmuzzOZwFp?utm_source=generator"
-          width="100%"
-          height="200"
-          frameBorder="0"
-          title="spotify"
-          allowFullscreen=""
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"
-        ></iframe>
+        >
+          <Title
+            title="Canciones que no pueden faltar"
+            description={
+              "Agrega a nuestra playlist de Spotify tus mejores recomendaciones"
+            }
+            buttonText={"Unete a la playlist"}
+            onPress={() => {
+              window.open(
+                "https://open.spotify.com/playlist/3g90UpMfBU2AnmuzzOZwFp?si=BkdmXw5RQiOij8L1X_X1IA&pt=c0d10d45647b03f994980edc7ab90ecb"
+              );
+            }}
+            footerMusic={"Se parte de nuestra playlist"}
+          />
+        </div>
 
         <div style={{ paddingTop: "5vmin" }} class="container">
           <div class="gallery-container w-3 h-2">
