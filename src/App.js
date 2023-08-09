@@ -226,7 +226,7 @@ const App = () => {
             buttonText={"Únete aquí"}
             onPress={() => {
               window.open(
-                "https://open.spotify.com/playlist/3g90UpMfBU2AnmuzzOZwFp?si=aK_KW8QMTqSfQ84kcJqHpg&pt=542c7c4de9d764d5ac7b76581c016651"
+                "https://open.spotify.com/playlist/3g90UpMfBU2AnmuzzOZwFp?si=hSsylzkLR1eurmeePlp2cQ&pt=5c9a1d2982e7acfcf5511c8e037a33f8"
               );
             }}
             footerMusic={"Se parte de nuestra playlist"}
