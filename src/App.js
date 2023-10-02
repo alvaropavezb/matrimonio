@@ -210,6 +210,8 @@ const App = () => {
         <ElfsightWidget
           style={{ backgroundColor: "white", paddingBottom: 20 }}
           widgetId="e2b22dfa-3014-4286-b1c7-6bddb5d4823f"
+          lazy
+          modern
         />
 
         <div
