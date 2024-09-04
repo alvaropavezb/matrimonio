@@ -3,7 +3,7 @@ import Music from "../../assets/svgs/Music.svg";
 import Music1 from "../../assets/svgs/Music1.svg";
 import Regalo from "../../assets/svgs/Regalo.svg";
 import Regalo1 from "../../assets/svgs/Regalo1.svg";
-import logo from "../../assets/svgs/logoko.png";
+import logo from "../../assets/svgs/logo-iglesia.png";
 
 const Title = ({
   title,

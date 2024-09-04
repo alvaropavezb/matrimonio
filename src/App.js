@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import countdown from "./assets/svgs/countdown.svg";
-import invitation from "./assets/svgs/invitacion.png";
+import invitation from "./assets/svgs/invitacion2.png";
 
 //Photos
 import photo1 from "./assets/fotos/1.jpg";
@@ -12,6 +12,7 @@ import photo5 from "./assets/fotos/5.jpg";
 import photo6 from "./assets/fotos/6.jpg";
 import photo7 from "./assets/fotos/7.jpg";
 import photo8 from "./assets/fotos/8.jpg";
+import fondo from "./assets/fotos/fondo.png";
 
 import Title from "./components/Title";
 
@@ -47,7 +48,7 @@ const App = () => {
     };
   };
 
-  const targetDate = new Date("November 24, 2023 18:00:00").getTime();
+  const targetDate = new Date("December 07, 2024 17:00:00").getTime();
   const [timeLeft, setTimeLeft] = useState(getTimeLeft());
 
   useEffect(() => {
@@ -163,16 +164,17 @@ const App = () => {
         </div>
         <div
           style={{
-            backgroundColor: "white",
+            //background image
+            backgroundImage: "url(" + fondo + ")",
+            backgroundSize: "cover",
             flexDirection: "column",
           }}
         >
           <Title
-            title="Ubicación"
             description={
-              "Camino al volcán #11815, San José de Maipo, Santiago."
+              "Tenemos el Honor de invitarlos a nuestra ceremonia religiosa en:"
             }
-            footerUbicacion={"K0 Eventos"}
+            footerUbicacion={"K0 Eventos 2"}
           />
           <iframe
             frameBorder={0}
