@@ -5,9 +5,7 @@ import Regalo from "../../assets/svgs/Regalo.svg";
 import Regalo1 from "../../assets/svgs/Regalo1.svg";
 import Copas from "../../assets/svgs/copas.svg";
 import Dress from "../../assets/svgs/dress.svg";
-import Fiesta from "../../assets/svgs/fiesta.svg";
 import Iglesia from "../../assets/svgs/iglesia.svg";
-import Parroquia from "../../assets/svgs/parroquia.svg";
 
 const Title = ({
   title,
@@ -49,16 +47,6 @@ const Title = ({
           />
         </div>
       )}
-      <h1
-        style={{
-          color: "#BF6A66",
-          fontSize: "6vmin",
-        }}
-      >
-        {title}
-      </h1>
-
-      <h2 style={{ color: "#7E6449", fontSize: "4vmin" }}>{subtitulo}</h2>
       {footerUbicacion && (
         <div>
           <img
@@ -93,6 +81,17 @@ const Title = ({
       )}
       <h1
         style={{
+          color: "#BF6A66",
+          fontSize: "6vmin",
+        }}
+      >
+        {title}
+      </h1>
+
+      <h2 style={{ color: "#7E6449", fontSize: "4vmin" }}>{subtitulo}</h2>
+
+      <h1
+        style={{
           color: "#7E6449",
           fontSize: "4vmin",
           fontWeight: "lighter",
@@ -100,30 +99,7 @@ const Title = ({
       >
         {description}
       </h1>
-      {footerUbicacion && (
-        <div>
-          <img
-            src={Parroquia}
-            className="App-logo"
-            alt="Regalo"
-            style={{
-              padding: "4vmin",
-            }}
-          />
-        </div>
-      )}
-      {footerUbicacion2 && (
-        <div>
-          <img
-            src={Fiesta}
-            className="App-logo"
-            alt="Regalo"
-            style={{
-              padding: "4vmin",
-            }}
-          />
-        </div>
-      )}
+
       {footer && (
         <div>
           <img

@@ -1,17 +1,11 @@
 import React, { useEffect, useState } from "react";
+import ReactAudioPlayer from "react-audio-player";
 import "./App.css";
+import song from "./assets/songs/song.mp3";
 import countdown from "./assets/svgs/countdown.svg";
 import invitation from "./assets/svgs/invitacion2.png";
 
 //Photos
-import photo1 from "./assets/fotos/1.jpg";
-import photo2 from "./assets/fotos/2.jpg";
-import photo3 from "./assets/fotos/3.jpg";
-import photo4 from "./assets/fotos/4.jpg";
-import photo5 from "./assets/fotos/5.jpg";
-import photo6 from "./assets/fotos/6.jpg";
-import photo7 from "./assets/fotos/7.jpg";
-import photo8 from "./assets/fotos/8.jpg";
 import fondo from "./assets/fotos/fondo.png";
 
 import Title from "./components/Title";
@@ -169,8 +163,11 @@ const App = () => {
           }}
         >
           <Title
-            description={
+            title={
               "Tenemos el Honor de invitarlos a nuestra ceremonia religiosa en:"
+            }
+            description={
+              "Parroquia Niño Jesús, Avenida Quilín 11300, Peñalolén"
             }
             footerUbicacion={"K0 Eventos 2"}
           />
@@ -186,23 +183,27 @@ const App = () => {
           ></iframe>
           <div>
             <Title
-              description={"Y despues nos transladaremos a la fiesta en:"}
+              title={"Y despues nos transladaremos a la fiesta en:"}
+              description={
+                "Centro de eventos Colibri 88MF+M5, Buin, Región Metropolitana"
+              }
               footerUbicacion2={"K0 Eventos 2"}
             />
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4583.210900106528!2d-70.6819280447085!3d-33.665812404684274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9663210c269fb48f%3A0x64782269547f5d04!2s88MF%2BM5%2C%20Buin%2C%20Regi%C3%B3n%20Metropolitana%2C%20Chile!5e1!3m2!1ses!2snz!4v1725746133346!5m2!1ses!2snz"
-              width="600"
-              height="450"
-              allowfullscreen=""
+              frameBorder={0}
+              style={{ width: "100%" }}
+              height="550"
               loading="lazy"
+              allowFullscreen
               referrerpolicy="no-referrer-when-downgrade"
+              title="mapa"
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDwASquGLlakbT_jhAezIJb1ZeDTu9hCtM&q=EventosColibri,+Buin,+Región+Metropolitana,+Chile&maptype=satellite&zoom=15"
             ></iframe>
           </div>
         </div>
 
         <div
           style={{
-            backgroundColor: "white",
             flexDirection: "column",
           }}
         >
@@ -210,29 +211,46 @@ const App = () => {
             dressCode={true}
             title="Dress Code: Formal"
             description={
-              "El blanco es exclusivo para la Novia, al igual que el lila para las Damas de Honor. Todos los demas colores estan disponibles. "
+              "El blanco es EXCLUSIVO para la Novia, al igual que el lila para las Damas de Honor. Todos los demas colores estan disponibles. "
             }
           />
         </div>
 
         <div
           style={{
-            backgroundColor: "white",
             flexDirection: "column",
+            backgroundColor: "white",
           }}
         >
           <Title
             title="Regalos"
             description={
-              "El mejor regalo es que compartan con nosotros en este día tan especial. Si desean contribuir de alguna otra manera, aquí una idea. "
+              "Tu presencia es nuestro mejor regalo, pero si deseas tener un detalle con nosotros, ayudanos a construir nuestro pequeño nidito de amor."
             }
             footer={"Aporte para Luna de Miel"}
             buttonText={"Haz click aquí para los detalles"}
             onPress={() => {
               window.open(
-                "https://milistadenovios.cl/lista/jesuyalvaro",
+                "https://milistadenovios.cl/enviar-regalo?id=19484",
                 "_blank"
               );
+            }}
+          />
+        </div>
+
+        <div
+          style={{
+            flexDirection: "column",
+          }}
+        >
+          <Title
+            title="Por favor confirma tu asistencia!"
+            description={
+              "Nos gustaría verte en nuestra boda y crear juntos recuerdos inolvidables. Por favor, confirma tu asistencia con 3 semanas de  anticipación para que podamos tener todo listo!!"
+            }
+            buttonText={"Confirma aquí"}
+            onPress={() => {
+              window.open("https://forms.gle/fdgsyQyqhdqaEQfD6");
             }}
           />
         </div>
@@ -250,13 +268,17 @@ const App = () => {
             }
             buttonText={"Únete aquí"}
             onPress={() => {
-              window.open("https://spotify.link/pJlVSjO5uDb");
+              window.open(
+                "https://open.spotify.com/playlist/2LRJGLnwsIDhlFSpdadfD8?si=5wvAeF5JQiiIU1ogh1ReYw"
+              );
             }}
             footerMusic={"Se parte de nuestra playlist"}
           />
         </div>
 
-        <div style={{ paddingTop: "5vmin" }} class="container">
+        <ReactAudioPlayer src={song} autoPlay={true} />
+
+        {/*  <div style={{ paddingTop: "5vmin" }} class="container">
           <div class="gallery-container w-3 h-2">
             <div class="gallery-item">
               <div class="image">
@@ -318,7 +340,7 @@ const App = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </header>
     </div>
   );
