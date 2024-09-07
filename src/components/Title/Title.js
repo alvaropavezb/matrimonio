@@ -3,7 +3,11 @@ import Music from "../../assets/svgs/Music.svg";
 import Music1 from "../../assets/svgs/Music1.svg";
 import Regalo from "../../assets/svgs/Regalo.svg";
 import Regalo1 from "../../assets/svgs/Regalo1.svg";
-import logo from "../../assets/svgs/logo-iglesia.png";
+import Copas from "../../assets/svgs/copas.svg";
+import Dress from "../../assets/svgs/dress.svg";
+import Fiesta from "../../assets/svgs/fiesta.svg";
+import Iglesia from "../../assets/svgs/iglesia.svg";
+import Parroquia from "../../assets/svgs/parroquia.svg";
 
 const Title = ({
   title,
@@ -12,8 +16,10 @@ const Title = ({
   footer,
   footerMusic,
   footerUbicacion,
+  footerUbicacion2,
   buttonText,
   onPress,
+  dressCode,
 }) => {
   return (
     <div
@@ -27,6 +33,22 @@ const Title = ({
         paddingLeft: "8vmin",
       }}
     >
+      {dressCode && (
+        <div>
+          <img
+            src={Dress}
+            className="App-logo"
+            alt="Regalo"
+            style={{
+              width: 70,
+              height: 70,
+
+              left: 10,
+              marginTop: "1vmin",
+            }}
+          />
+        </div>
+      )}
       <h1
         style={{
           color: "#BF6A66",
@@ -35,11 +57,28 @@ const Title = ({
       >
         {title}
       </h1>
+
       <h2 style={{ color: "#7E6449", fontSize: "4vmin" }}>{subtitulo}</h2>
       {footerUbicacion && (
         <div>
           <img
-            src={logo}
+            src={Iglesia}
+            className="App-logo"
+            alt="Regalo"
+            style={{
+              width: 70,
+              height: 70,
+
+              left: 10,
+              marginTop: "1vmin",
+            }}
+          />
+        </div>
+      )}
+      {footerUbicacion2 && (
+        <div>
+          <img
+            src={Copas}
             className="App-logo"
             alt="Regalo"
             style={{
@@ -61,6 +100,30 @@ const Title = ({
       >
         {description}
       </h1>
+      {footerUbicacion && (
+        <div>
+          <img
+            src={Parroquia}
+            className="App-logo"
+            alt="Regalo"
+            style={{
+              padding: "4vmin",
+            }}
+          />
+        </div>
+      )}
+      {footerUbicacion2 && (
+        <div>
+          <img
+            src={Fiesta}
+            className="App-logo"
+            alt="Regalo"
+            style={{
+              padding: "4vmin",
+            }}
+          />
+        </div>
+      )}
       {footer && (
         <div>
           <img

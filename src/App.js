@@ -16,8 +16,6 @@ import fondo from "./assets/fotos/fondo.png";
 
 import Title from "./components/Title";
 
-import { ElfsightWidget } from "react-elfsight-widget";
-
 const App = () => {
   const getTimeLeft = () => {
     const now = new Date().getTime();
@@ -184,9 +182,39 @@ const App = () => {
             allowFullscreen
             referrerpolicy="no-referrer-when-downgrade"
             title="mapa"
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDwASquGLlakbT_jhAezIJb1ZeDTu9hCtM&q=Ko+Eventos+-+Camino+Al+Volcán,+El+Manzano,+San+Jose+de+Maipo,+Chile&maptype=satellite&zoom=13"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDwASquGLlakbT_jhAezIJb1ZeDTu9hCtM&q=Parroquia+Niño+-+Jesus+Peñalolen+Chile&maptype=satellite&zoom=13"
           ></iframe>
+          <div>
+            <Title
+              description={"Y despues nos transladaremos a la fiesta en:"}
+              footerUbicacion2={"K0 Eventos 2"}
+            />
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4583.210900106528!2d-70.6819280447085!3d-33.665812404684274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9663210c269fb48f%3A0x64782269547f5d04!2s88MF%2BM5%2C%20Buin%2C%20Regi%C3%B3n%20Metropolitana%2C%20Chile!5e1!3m2!1ses!2snz!4v1725746133346!5m2!1ses!2snz"
+              width="600"
+              height="450"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
+
+        <div
+          style={{
+            backgroundColor: "white",
+            flexDirection: "column",
+          }}
+        >
+          <Title
+            dressCode={true}
+            title="Dress Code: Formal"
+            description={
+              "El blanco es exclusivo para la Novia, al igual que el lila para las Damas de Honor. Todos los demas colores estan disponibles. "
+            }
+          />
+        </div>
+
         <div
           style={{
             backgroundColor: "white",
@@ -208,13 +236,6 @@ const App = () => {
             }}
           />
         </div>
-
-        <ElfsightWidget
-          style={{ backgroundColor: "white", paddingBottom: 20 }}
-          widgetId="e2b22dfa-3014-4286-b1c7-6bddb5d4823f"
-          lazy
-          modern
-        />
 
         <div
           style={{
