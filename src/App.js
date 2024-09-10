@@ -1,9 +1,22 @@
 import React, { useEffect, useState } from "react";
-import ReactAudioPlayer from "react-audio-player";
 import "./App.css";
-import song from "./assets/songs/song.mp3";
 import countdown from "./assets/svgs/countdown.svg";
-import invitation from "./assets/svgs/invitacion2.png";
+import invitation from "./assets/svgs/invitacion.png";
+
+//fotos
+import photo1 from "./assets/fotos/1.jpeg";
+import photo2 from "./assets/fotos/2.jpeg";
+import photo3 from "./assets/fotos/3.jpeg";
+import photo4 from "./assets/fotos/4.jpeg";
+import photo5 from "./assets/fotos/5.jpeg";
+import photo6 from "./assets/fotos/6.jpeg";
+import photo7 from "./assets/fotos/7.jpeg";
+import photo8 from "./assets/fotos/8.jpeg";
+import photo9 from "./assets/fotos/9.jpeg";
+
+//Audio
+import ReactAudioPlayer from "react-audio-player";
+import song from "./assets/songs/song.mp3";
 
 //Photos
 import fondo from "./assets/fotos/fondo.png";
@@ -183,7 +196,7 @@ const App = () => {
           ></iframe>
           <div>
             <Title
-              title={"Y despues nos transladaremos a la fiesta en:"}
+              title={"y posteriormente... nos vamos a la fiesta!"}
               description={
                 "Centro de eventos Colibri 88MF+M5, Buin, Región Metropolitana"
               }
@@ -264,7 +277,7 @@ const App = () => {
           <Title
             title="Canciones que no pueden faltar"
             description={
-              "Agrega a nuestra playlist de Spotify tus mejores recomendaciones"
+              "Para que bailemos hasta abajo puedes incluir las canciones que quieras en spotify y ¡ no olvides traer zapatos comodos de recambio!"
             }
             buttonText={"Únete aquí"}
             onPress={() => {
@@ -278,8 +291,15 @@ const App = () => {
 
         <ReactAudioPlayer src={song} autoPlay={true} />
 
-        {/*  <div style={{ paddingTop: "5vmin" }} class="container">
+        <div style={{ paddingTop: "5vmin" }} class="container">
           <div class="gallery-container w-3 h-2">
+            <div class="gallery-item">
+              <div class="image">
+                <img src={photo2} alt="people" />
+              </div>
+            </div>
+          </div>
+          <div class="gallery-container w-6 h-2">
             <div class="gallery-item">
               <div class="image">
                 <img src={photo1} alt="nature" />
@@ -290,20 +310,12 @@ const App = () => {
           <div class="gallery-container w-3 h-2">
             <div class="gallery-item">
               <div class="image">
-                <img src={photo2} alt="people" />
-              </div>
-            </div>
-          </div>
-
-          <div class="gallery-container w-2 h-2">
-            <div class="gallery-item">
-              <div class="image">
                 <img src={photo4} alt="fitness" />
               </div>
             </div>
           </div>
 
-          <div class="gallery-container w-4 h-1">
+          <div class="gallery-container w-6 h-2">
             <div class="gallery-item">
               <div class="image">
                 <img src={photo5} alt="food" />
@@ -311,7 +323,7 @@ const App = () => {
             </div>
           </div>
 
-          <div class="gallery-container">
+          <div class="gallery-container w-3 h-2">
             <div class="gallery-item">
               <div class="image">
                 <img src={photo6} alt="travel" />
@@ -333,14 +345,22 @@ const App = () => {
               </div>
             </div>
           </div>
-          <div class="gallery-container w-3 h-1">
+
+          <div class="gallery-container w-3 h-2">
             <div class="gallery-item">
               <div class="image">
                 <img src={photo8} alt="sport" />
               </div>
             </div>
           </div>
-        </div> */}
+          <div class="gallery-container w-6 h-3">
+            <div class="gallery-item">
+              <div class="image">
+                <img src={photo9} alt="sport" />
+              </div>
+            </div>
+          </div>
+        </div>
       </header>
     </div>
   );
