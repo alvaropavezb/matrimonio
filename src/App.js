@@ -4,14 +4,6 @@ import countdown from "./assets/svgs/countdown.svg";
 import invitation from "./assets/svgs/invitacion.png";
 
 //fotos
-import photo2 from "./assets/fotos/2.jpeg";
-import photo3 from "./assets/fotos/3.jpeg";
-import photo4 from "./assets/fotos/4.jpeg";
-import photo5 from "./assets/fotos/5.jpeg";
-import photo6 from "./assets/fotos/6.jpeg";
-import photo7 from "./assets/fotos/7.jpeg";
-import photo8 from "./assets/fotos/8.jpeg";
-import photo9 from "./assets/fotos/9.jpeg";
 
 //import photo from public folder
 
@@ -296,7 +288,12 @@ const App = () => {
           <div class="gallery-container w-3 h-2">
             <div class="gallery-item">
               <div class="image">
-                <img src={photo2} alt="people" />
+                <img
+                  src={
+                    "https://firebasestorage.googleapis.com/v0/b/crwn-db-6545f.appspot.com/o/2.jpeg?alt=media&token=7382b91a-de4a-494f-888f-6508b5e996b0"
+                  }
+                  alt="people"
+                />
               </div>
             </div>
           </div>
@@ -316,7 +313,12 @@ const App = () => {
           <div class="gallery-container w-3 h-2">
             <div class="gallery-item">
               <div class="image">
-                <img src={photo4} alt="fitness" />
+                <img
+                  src={
+                    "https://firebasestorage.googleapis.com/v0/b/crwn-db-6545f.appspot.com/o/4.jpeg?alt=media&token=97f51956-f42d-4cd2-81e5-e36cd68b24a6"
+                  }
+                  alt="fitness"
+                />
               </div>
             </div>
           </div>
@@ -324,7 +326,12 @@ const App = () => {
           <div class="gallery-container w-6 h-2">
             <div class="gallery-item">
               <div class="image">
-                <img src={photo5} alt="food" />
+                <img
+                  src={
+                    "https://firebasestorage.googleapis.com/v0/b/crwn-db-6545f.appspot.com/o/5.jpeg?alt=media&token=da108ccd-27a0-4bfd-a357-1565c0f88e17"
+                  }
+                  alt="food"
+                />
               </div>
             </div>
           </div>
@@ -332,14 +339,24 @@ const App = () => {
           <div class="gallery-container w-3 h-2">
             <div class="gallery-item">
               <div class="image">
-                <img src={photo6} alt="travel" />
+                <img
+                  src={
+                    "https://firebasestorage.googleapis.com/v0/b/crwn-db-6545f.appspot.com/o/6.jpeg?alt=media&token=873c6eff-efcf-4c03-901d-4728f1a5c84f"
+                  }
+                  alt="travel"
+                />
               </div>
             </div>
           </div>
           <div class="gallery-container w-3 h-2">
             <div class="gallery-item">
               <div class="image">
-                <img src={photo7} alt="art" />
+                <img
+                  src={
+                    "https://firebasestorage.googleapis.com/v0/b/crwn-db-6545f.appspot.com/o/7.jpeg?alt=media&token=f0fc9580-91fd-4f70-b98d-e871005cb1a4"
+                  }
+                  alt="art"
+                />
               </div>
             </div>
           </div>
@@ -347,7 +364,12 @@ const App = () => {
           <div class="gallery-container w-3 h-2">
             <div class="gallery-item">
               <div class="image">
-                <img src={photo3} alt="sport" />
+                <img
+                  src={
+                    "https://firebasestorage.googleapis.com/v0/b/crwn-db-6545f.appspot.com/o/3.jpeg?alt=media&token=13a1dbda-803c-4a6e-a56c-0b699b26383c"
+                  }
+                  alt="sport"
+                />
               </div>
             </div>
           </div>
@@ -355,14 +377,24 @@ const App = () => {
           <div class="gallery-container w-3 h-2">
             <div class="gallery-item">
               <div class="image">
-                <img src={photo8} alt="sport" />
+                <img
+                  src={
+                    "https://firebasestorage.googleapis.com/v0/b/crwn-db-6545f.appspot.com/o/8.jpeg?alt=media&token=4b2baf92-6ed9-4124-8ee0-2fd35e92cd72"
+                  }
+                  alt="sport"
+                />
               </div>
             </div>
           </div>
           <div class="gallery-container w-6 h-3">
             <div class="gallery-item">
               <div class="image">
-                <img src={photo9} alt="sport" />
+                <img
+                  src={
+                    "https://firebasestorage.googleapis.com/v0/b/crwn-db-6545f.appspot.com/o/9.jpeg?alt=media&token=683ccfd9-f405-4078-82ec-70f68adc1074"
+                  }
+                  alt="sport"
+                />
               </div>
             </div>
           </div>
