@@ -4,7 +4,6 @@ import countdown from "./assets/svgs/countdown.svg";
 import invitation from "./assets/svgs/invitacion.png";
 
 //fotos
-import photo1 from "./assets/fotos/1.jpeg";
 import photo2 from "./assets/fotos/2.jpeg";
 import photo3 from "./assets/fotos/3.jpeg";
 import photo4 from "./assets/fotos/4.jpeg";
@@ -13,6 +12,8 @@ import photo6 from "./assets/fotos/6.jpeg";
 import photo7 from "./assets/fotos/7.jpeg";
 import photo8 from "./assets/fotos/8.jpeg";
 import photo9 from "./assets/fotos/9.jpeg";
+
+//import photo from public folder
 
 //Audio
 import ReactAudioPlayer from "react-audio-player";
@@ -302,7 +303,12 @@ const App = () => {
           <div class="gallery-container w-6 h-2">
             <div class="gallery-item">
               <div class="image">
-                <img src={photo1} alt="nature" />
+                <img
+                  src={
+                    "https://firebasestorage.googleapis.com/v0/b/crwn-db-6545f.appspot.com/o/1.jpeg?alt=media&token=f595bcf3-fbae-4aa2-8693-b00a5ef10b57"
+                  }
+                  alt="nature"
+                />
               </div>
             </div>
           </div>
