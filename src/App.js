@@ -1,20 +1,30 @@
 import React, { useEffect, useState } from "react";
+import AudioPlayer from "react-modern-audio-player";
 import "./App.css";
 import countdown from "./assets/svgs/countdown.svg";
 import invitation from "./assets/svgs/invitacion.png";
-
 //fotos
 
 //import photo from public folder
 
 //Audio
-import ReactAudioPlayer from "react-audio-player";
+import imagesong from "./assets/fotos/song.jpg";
 import song from "./assets/songs/song.mp3";
 
 //Photos
 import fondo from "./assets/fotos/fondo.png";
 
 import Title from "./components/Title";
+
+const playList = [
+  {
+    name: "Heroes",
+    writer: "David Bowie",
+    img: imagesong,
+    src: song,
+    id: 1,
+  },
+];
 
 const App = () => {
   const getTimeLeft = () => {
@@ -58,10 +68,29 @@ const App = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  const defaultInterfacePlacement = {
+    interface: {
+      templateArea: {
+        artwork: "row1-8",
+        progress: "row1-5",
+        playButton: "row1-1",
+      },
+    },
+  };
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={invitation} className="App-logo" alt="logo" />
+
+        <AudioPlayer
+          activeUI={{
+            progress: "waveform",
+            playButton: "play",
+          }}
+          playList={playList}
+          placement={defaultInterfacePlacement}
+        />
         <div
           style={{
             paddingBottom: "5vmin",
@@ -281,8 +310,6 @@ const App = () => {
             footerMusic={"Se parte de nuestra playlist"}
           />
         </div>
-
-        <ReactAudioPlayer src={song} autoPlay={true} />
 
         <div style={{ paddingTop: "5vmin" }} class="container">
           <div class="gallery-container w-3 h-2">
