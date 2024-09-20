@@ -9,7 +9,6 @@ import invitation from "./assets/svgs/invitacion.png";
 
 //Audio
 import imagesong from "./assets/fotos/song.jpg";
-import song from "./assets/songs/song.mp3";
 
 //Photos
 import fondo from "./assets/fotos/fondo.png";
@@ -21,7 +20,7 @@ const playList = [
     name: "Heroes",
     writer: "David Bowie",
     img: imagesong,
-    src: song,
+    src: "https://firebasestorage.googleapis.com/v0/b/crwn-db-6545f.appspot.com/o/song.mp3?alt=media&token=d8820637-b54f-46bb-8046-37fbb757e0c3",
     id: 1,
   },
 ];
@@ -85,7 +84,7 @@ const App = () => {
 
         <AudioPlayer
           activeUI={{
-            progress: "waveform",
+            progress: "line",
             playButton: "play",
           }}
           playList={playList}

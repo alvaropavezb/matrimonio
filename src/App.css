@@ -35,7 +35,7 @@ body{
 .rm-audio-player-provider {
   --rm-audio-player-interface-container: #f0e6e4;
   --rm-audio-player-progress-bar-background: rgb(242, 170, 168);
-  --rm-audio-player-progress-bar:#4f0e0e;
+  --rm-audio-player-progress-bar:rgb(126 100 73);
   }
 
 
